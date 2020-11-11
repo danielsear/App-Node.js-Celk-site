@@ -19,3 +19,5 @@ Bootstrap
 ReactStrap
 
 > npm install --save reactstrap
+
+pagniga de consulta >http://reactstrap.github.io/components/
