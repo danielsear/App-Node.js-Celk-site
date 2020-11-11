@@ -20,4 +20,6 @@ ReactStrap
 
 > npm install --save reactstrap
 
-pagniga de consulta >http://reactstrap.github.io/components/
+pagniga de consulta components
+
+> http://reactstrap.github.io/components/ ,> https://getbootstrap.com/docs/4.5/examples/
