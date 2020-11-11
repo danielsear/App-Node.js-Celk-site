@@ -1,6 +1,13 @@
 import Head from "next/head";
 import Menu from "../components/Menu";
+import Rodape from "../components/Rodape";
+
 import { Container, Jumbotron } from "reactstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+
+library.add(fas);
 
 function Home() {
   return (
@@ -37,7 +44,20 @@ function Home() {
                   background-color: #fff;
                   padding: 80px 0;
                   margin-bottom: 0rem !important;
-              }`}
+              }
+              .circulo{
+                  widht:140px;
+                  height:140px;
+                  background-color: #fed136;
+                  font-size: 52px;
+                  padding-top: 24px;
+                  color: #fff;
+              }
+              .centralizar{
+                  margin: 0 auto !important;
+                  float: none !important;
+              }
+              `}
         </style>
         <Container className="text-center">
           <div>
@@ -46,23 +66,30 @@ function Home() {
           </div>
           <div className="row">
             <div className="col-md-4">
-              <div className="rounded-circle circulo centralizar">A</div>
+              <div className="rounded-circle circulo centralizar">
+                <FontAwesomeIcon icon={["fas", "code"]} />
+              </div>
               <h2 className="mt-4 mb-4">Serviço um</h2>
               <p>Descrição</p>
             </div>
             <div className="col-md-4">
-              <div className="rounded-circle circulo centralizar">B</div>
+              <div className="rounded-circle circulo centralizar">
+                <FontAwesomeIcon icon={["fas", "laptop-code"]} />
+              </div>
               <h2 className="mt-4 mb-4">Serviço dois</h2>
               <p>Descrição</p>
             </div>
             <div className="col-md-4">
-              <div className="rounded-circle circulo centralizar">C</div>
+              <div className="rounded-circle circulo centralizar">
+                <FontAwesomeIcon icon={["fas", "mobile-alt"]} />
+              </div>
               <h2 className="mt-4 mb-4">Serviço treis</h2>
               <p>Descrição</p>
             </div>
           </div>
         </Container>
       </Jumbotron>
+      <Rodape />
     </>
   );
 }
